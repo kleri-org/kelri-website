@@ -8,6 +8,8 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	"workers_dev": true,
-	"preview_urls": true
+	"routes": [
+		{ "pattern": "kleri.org/*", "custom_domain": true },
+		{ "pattern": "www.kleri.org/*", "custom_domain": true }
+	]
 }
