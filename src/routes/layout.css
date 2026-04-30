@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme inline {
+	--color-cleri-green-1: rgb(25, 96, 114);
+	--color-cleri-green-2: rgb(132, 204, 184);
+	--color-cleri-green-3: rgb(35, 145, 144);
+
+	--font-sans: 'Poppins', sans-serif;
+	--font-mono: 'Space Mono', monospace;
+
+	--color-background: #0b1218;
+	--color-foreground: #e8f0f0;
+
+	--animate-shine: shine var(--duration) infinite linear;
+	--animate-shine-conic: shine-conic var(--duration) linear infinite;
+	--animate-meteor: meteor 1s linear infinite;
+}
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@layer base {
+	body {
+		font-family: var(--font-sans);
+		background-color: var(--color-background);
+		color: var(--color-foreground);
+	}
+}
+
+@property --angle {
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes shine {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+@keyframes shine-conic {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@keyframes meteor {
+	0% {
+		transform: rotate(60deg) translateX(500px);
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(60deg) translateX(-2300px);
+		opacity: 1;
+	}
+}
