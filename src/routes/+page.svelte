@@ -11,16 +11,12 @@
 				duration={5}
 				shineColor={['#196072', '#84ccb8', '#239190', '#84ccb8', '#196072']}
 			/>
-			<img
-				src="/cleri_logo.svg"
-				alt="Kleri logo"
-				class="relative h-32 w-32 rounded-2xl"
-			/>
+			<img src="/cleri_logo.svg" alt="Kleri logo" class="relative h-32 w-32 rounded-2xl" />
 		</div>
 
 		<div class="flex flex-col items-center gap-3">
 			<h1
-				class="bg-gradient-to-r from-cleri-green-2 via-cleri-green-3 to-cleri-green-1 bg-clip-text text-5xl font-bold tracking-tight text-transparent"
+				class="bg-linear-to-r from-cleri-green-2 via-cleri-green-3 to-cleri-green-1 bg-clip-text text-5xl font-bold tracking-tight text-transparent"
 			>
 				Kleri
 			</h1>
